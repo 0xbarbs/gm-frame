@@ -44,7 +44,7 @@ export const LeaderboardFrameHandler = async (c: any) => {
     }
   }
 
-  const fids = await kv.lrange<Greeting>('greetings:all', 0, 5);
+  const fids = await kv.lrange<Greeting>('greetings:all', 0, 4);
   const [
     greetings,
     counterTotal,
